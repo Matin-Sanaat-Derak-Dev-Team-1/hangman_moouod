@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hangman</title>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Hang man</h1>
+
+    <span>The word is :</span>
+    <span id="answerSpan"></span><br>
+    <span>health :</span>
+    <span id="healthSpan">5</span>
+
+    <br><br>
+    <input type="text" placeholder="char" id="inputChar" maxlength="1">
+    <button onclick="checkinput()" id="checkButton">check</button>
+
+    <br><br>
+    <span style="background-color: red; display: none; color: aliceblue;" id="missBox" display>miss!!!</span>
+    <div style="background-color: red; display: none; text-align: center; color: aliceblue;" id="loseBox" display>Game Over!</div>
+    <span style="background-color: green; display: none; color: aliceblue;" id="correctBox">correct!</span>
+    <div style="background-color: green; display: none; text-align: center; color: aliceblue;" id="winBox">Victory!</div>
+
+
+    <script src="hangman.js"></script>
+</body>
+
+</html>
